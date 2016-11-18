@@ -66,5 +66,5 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesSto
 
 REACT = {
     'RENDER': True,
-    'RENDER_URL': 'http://127.0.0.1:9009',
+    'RENDER_URL': 'http://react:9009',
 }

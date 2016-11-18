@@ -6,7 +6,7 @@ var argv = require('yargs').argv;
 
 require('babel/register');  // For the JSX and ES6 conversion
 
-var ADDRESS = argv.host || '127.0.0.1';
+var ADDRESS = argv.host || '0.0.0.0';
 var PORT = argv.port || 9009;
 
 var app = express();

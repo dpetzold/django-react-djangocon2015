@@ -1,0 +1,16 @@
+django:
+  build: .
+  container_name: django
+  volumes:
+    - .:/usr/src/app
+  ports:
+    - "8080:8080"
+
+react:
+  build: .
+  command: nodejs react-server.js
+  volumes_from:
+    - django
+  container_name: react
+  ports:
+    - "9009:9009"
